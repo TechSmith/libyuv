@@ -105,3 +105,6 @@ libyuv_arm.lib
 source/*.o
 
 
+*.tlog
+*.opendb
+*.sdf
