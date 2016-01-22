@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include=".\source\compare.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\compare_common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\compare_neon.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\compare_neon64.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\compare_gcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\compare_win.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\convert.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\convert_argb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\convert_from.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\convert_from_argb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\convert_jpeg.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\convert_to_argb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\convert_to_i420.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\cpu_id.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\mjpeg_decoder.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\mjpeg_validate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\planar_functions.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\rotate.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\rotate_any.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\rotate_argb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\rotate_common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\rotate_mips.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\rotate_neon.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\rotate_neon64.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\rotate_gcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\rotate_win.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\row_any.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\row_common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\row_mips.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\row_neon.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\row_neon64.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\row_gcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\row_win.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\scale.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\scale_any.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\scale_argb.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\scale_common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\scale_mips.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\scale_neon.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\scale_neon64.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\scale_gcc.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\scale_win.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include=".\source\video_common.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{9013D142-749E-30E3-BC7A-1E3574D65540}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
