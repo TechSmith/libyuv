@@ -1,0 +1,101 @@
+configurations {
+   Linkage {
+      choices: { dynamic,static };
+      dynamic.description = "Dynamic MFC";
+      static.description = "Static MFC";
+   }
+
+   Toolset {
+      key : "PlatformToolset";
+      choices: { v140 };
+   };
+}
+
+nuget
+{
+   nuspec
+   {
+      id = libyuv;
+      version: 1.0.0.1;
+      title: libyuv;
+      authors: { Google Inc. };
+      owners: { Google Inc. };
+      licenseUrl: "https://chromium.googlesource.com/libyuv/libyuv/+/master/LICENSE";
+      projectUrl: "https://chromium.googlesource.com/libyuv/libyuv/+/master";
+      iconUrl: "https://www.google.com/favicon.ico";
+      requireLicenseAcceptance: false;
+      summary: libyuv static library;
+      releaseNotes: "";
+      description: @"libyuv static library for color conversion and other image manipulation"
+
+      copyright: "Copyright 2011 The LibYuv Project Authors. All rights reserved.";
+      tags: { native, static, vs2015, cpp, libyuv };
+   };
+
+   files
+   {
+      includeDir:  { #destination = ${d_include}; Include\*.h; };
+      includeLibYUVDir:  { #destination = ${d_include}\libyuv; Include\libyuv\*.h; };
+      libpdb:         { #destination = ${d_lib}; };
+
+      [x86,v140,debug,dynamic]
+      {
+         lib:    { debug\win32\*.lib; }
+         libpdb: { debug\win32\*.pdb; }
+      };
+      [x86,v140,release,dynamic]
+      {
+         lib:    { release\win32\*.lib; }
+         libpdb: { release\win32\*.pdb; }
+      };
+      [x64,v140,debug,dynamic]
+      {
+         lib:    { debug\x64\*.lib; }
+         libpdb: { debug\x64\*.pdb; }
+      };
+      [x64,v140,release,dynamic]
+      {
+         lib:    { release\x64\*.lib; }
+         libpdb: { release\x64\*.pdb; }
+      };
+      [x86,v140,debug,static]
+      {
+         lib:    { debug\win32\*.lib; }
+         libpdb: { debug\win32\*.pdb; }
+      };
+      [x86,v140,release,static]
+      {
+         lib:    { release\win32\*.lib; }
+         libpdb: { release\win32\*.pdb; }
+      };
+      [x64,v140,debug,static]
+      {
+         lib:    { debug\x64\*.lib; }
+         libpdb: { debug\x64\*.pdb; }
+      };
+      [x64,v140,release,static]
+      {
+         lib:    { release\x64\*.lib; }
+         libpdb: { release\x64\*.pdb; }
+      };
+   };
+
+   props
+   {
+      // Additional declarations to insert into consuming projects before most of the
+      // project settings. (These may be modified in visual studio by a developer
+      // consuming this package.)
+      // This node is typically not needed for most packages and may be omitted.
+   }
+
+   targets
+   {
+      // Additional declarations to insert into consuming projects after most of the
+      // project settings. (These may NOT be modified in visual studio by a developer
+      // consuming this package.)
+      // This node is often used to set defines that are required that must be set by
+      // the consuming project in order to correctly link to the libraries in this
+      // package.  Such defines may be set either globally or only set under specific
+      // conditions.
+    }
+}
