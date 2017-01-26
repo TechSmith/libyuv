@@ -1,8 +1,8 @@
 configurations {
    Linkage {
       choices: { dynamic,static };
-      dynamic.description = "Dynamic MFC";
-      static.description = "Static MFC";
+      dynamic.description = "Dynamic";
+      static.description = "Static";
    }
 
    Toolset {
@@ -16,7 +16,7 @@ nuget
    nuspec
    {
       id = libyuv;
-      version: 1.0.0.3;
+      version: 1.0.0.4-Pre;
       title: libyuv;
       authors: { Google Inc. };
       owners: { Google Inc. };
@@ -38,45 +38,13 @@ nuget
       includeLibYUVDir:  { #destination = ${d_include}\libyuv; Include\libyuv\*.h; };
       libpdb:         { #destination = ${d_lib}; };
 
-      [x86,v140,debug,dynamic]
+      ("Win32,x64", "v140", "Debug,Release", "Dynamic,Static") =>
       {
-         lib:    { debug\win32\*.lib; }
-         libpdb: { debug\win32\*.pdb; }
-      };
-      [x86,v140,release,dynamic]
-      {
-         lib:    { release\win32\*.lib; }
-         libpdb: { release\win32\*.pdb; }
-      };
-      [x64,v140,debug,dynamic]
-      {
-         lib:    { debug\x64\*.lib; }
-         libpdb: { debug\x64\*.pdb; }
-      };
-      [x64,v140,release,dynamic]
-      {
-         lib:    { release\x64\*.lib; }
-         libpdb: { release\x64\*.pdb; }
-      };
-      [x86,v140,debug,static]
-      {
-         lib:    { debug\win32\*.lib; }
-         libpdb: { debug\win32\*.pdb; }
-      };
-      [x86,v140,release,static]
-      {
-         lib:    { release\win32\*.lib; }
-         libpdb: { release\win32\*.pdb; }
-      };
-      [x64,v140,debug,static]
-      {
-         lib:    { debug\x64\*.lib; }
-         libpdb: { debug\x64\*.pdb; }
-      };
-      [x64,v140,release,static]
-      {
-         lib:    { release\x64\*.lib; }
-         libpdb: { release\x64\*.pdb; }
+         [${0},${1},${2},${3}]
+         {
+            lib:         { ${2}${3}${0}\yuv.lib; }
+            libpdb:      { ${2}${3}${0}\yuv.pdb; }
+         };
       };
    };
 
