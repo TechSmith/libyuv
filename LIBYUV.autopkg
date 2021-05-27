@@ -16,7 +16,7 @@ nuget
    nuspec
    {
       id = libyuv;
-      version: 1.0.1.5;
+      version: 2.0.0.1-Pre;
       title: libyuv;
       authors: { Google Inc. };
       owners: { Google Inc. };
