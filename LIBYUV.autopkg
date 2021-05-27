@@ -42,8 +42,8 @@ nuget
       {
          [${0},${1},${2},${3}]
          {
-            lib:         { ${2}${3}${0}\yuv.lib; }
-            libpdb:      { ${2}${3}${0}\yuv.pdb; }
+            lib:         { bin\${2}${3}${0}\yuv.lib; }
+            libpdb:      { bin\${2}${3}${0}\yuv.pdb; }
          };
       };
    };

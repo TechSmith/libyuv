@@ -98,32 +98,32 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'">$(SolutionDir)$(Configuration)$(PlatformName)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">$(SolutionDir)$(Configuration)$(PlatformName)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'">$(SolutionDir)bin\$(Configuration)$(PlatformName)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">$(SolutionDir)bin\$(Configuration)$(PlatformName)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'">$(SolutionDir)$(ProjectName)\$(Configuration)$(PlatformName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">$(SolutionDir)$(ProjectName)\$(Configuration)$(PlatformName)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'">yuv</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">yuv</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|x64'">.lib</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugStatic|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'">$(SolutionDir)$(Configuration)$(PlatformName)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">$(SolutionDir)$(Configuration)$(PlatformName)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'">$(SolutionDir)bin\$(Configuration)$(PlatformName)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">$(SolutionDir)bin\$(Configuration)$(PlatformName)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'">$(SolutionDir)$(ProjectName)\$(Configuration)$(PlatformName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">$(SolutionDir)$(ProjectName)\$(Configuration)$(PlatformName)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'">yuv</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">yuv</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|x64'">.lib</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">$(SolutionDir)$(Configuration)$(PlatformName)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">$(SolutionDir)$(Configuration)$(PlatformName)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">$(SolutionDir)bin\$(Configuration)$(PlatformName)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">$(SolutionDir)bin\$(Configuration)$(PlatformName)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">$(SolutionDir)$(ProjectName)\$(Configuration)$(PlatformName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">$(SolutionDir)$(ProjectName)\$(Configuration)$(PlatformName)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">yuv</TargetName>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">yuv</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugDynamic|Win32'">.lib</TargetExt>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='DebugStatic|Win32'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">$(SolutionDir)$(Configuration)$(PlatformName)\</OutDir>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">$(SolutionDir)$(Configuration)$(PlatformName)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">$(SolutionDir)bin\$(Configuration)$(PlatformName)\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">$(SolutionDir)bin\$(Configuration)$(PlatformName)\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">$(SolutionDir)$(ProjectName)\$(Configuration)$(PlatformName)\</IntDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='ReleaseStatic|Win32'">$(SolutionDir)$(ProjectName)\$(Configuration)$(PlatformName)\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='ReleaseDynamic|Win32'">yuv</TargetName>
