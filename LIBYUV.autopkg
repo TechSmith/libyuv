@@ -7,7 +7,7 @@ configurations {
 
    Toolset {
       key : "PlatformToolset";
-      choices: { v141 };
+      choices: { v142 };
    };
 }
 
@@ -38,7 +38,7 @@ nuget
       includeLibYUVDir:  { #destination = ${d_include}\libyuv; Include\libyuv\*.h; };
       libpdb:         { #destination = ${d_lib}; };
 
-      ("Win32,x64", "v141", "Debug,Release", "Dynamic,Static") =>
+      ("Win32,x64", "v142", "Debug,Release", "Dynamic,Static") =>
       {
          [${0},${1},${2},${3}]
          {
