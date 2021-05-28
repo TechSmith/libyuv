@@ -7,7 +7,7 @@ configurations {
 
    Toolset {
       key : "PlatformToolset";
-      choices: { v141 };
+      choices: { v142 };
    };
 }
 
@@ -16,7 +16,7 @@ nuget
    nuspec
    {
       id = libyuv;
-      version: 1.0.1.5;
+      version: 2.0.0.0;
       title: libyuv;
       authors: { Google Inc. };
       owners: { Google Inc. };
@@ -38,12 +38,12 @@ nuget
       includeLibYUVDir:  { #destination = ${d_include}\libyuv; Include\libyuv\*.h; };
       libpdb:         { #destination = ${d_lib}; };
 
-      ("Win32,x64", "v141", "Debug,Release", "Dynamic,Static") =>
+      ("Win32,x64", "v142", "Debug,Release", "Dynamic,Static") =>
       {
          [${0},${1},${2},${3}]
          {
-            lib:         { ${2}${3}${0}\yuv.lib; }
-            libpdb:      { ${2}${3}${0}\yuv.pdb; }
+            lib:         { bin\${2}${3}${0}\yuv.lib; }
+            libpdb:      { bin\${2}${3}${0}\yuv.pdb; }
          };
       };
    };
