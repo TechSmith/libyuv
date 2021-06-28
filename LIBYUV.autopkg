@@ -16,7 +16,7 @@ nuget
    nuspec
    {
       id = libyuv;
-      version: 2.0.0.0;
+      version: 2.0.1;
       title: libyuv;
       authors: { Google Inc. };
       owners: { Google Inc. };
@@ -29,7 +29,7 @@ nuget
       description: @"libyuv static library for color conversion and other image manipulation"
 
       copyright: "Copyright 2011 The LibYuv Project Authors. All rights reserved.";
-      tags: { native, static, vs2017, cpp, libyuv };
+      tags: { native, static, vs2019, cpp, libyuv };
    };
 
    files
